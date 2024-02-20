@@ -11,23 +11,38 @@ body{
 .menu{
     grid-row-start: 1;
     grid-row-end: 4;
-    background-color: pink;
+    background-color: rgb(69,144,206);
 }
 
 header{
     grid-column-start: 2;
     grid-column-end: 4;
-    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr
 }
 
 main{
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
+    grid-template-columns: 1fr .4fr ;
     grid-row-end: 4;
-    background-color: lightgreen;
+    display: grid;
+    background-color: lightgray;
 }
 
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .aside {
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 
 
 
